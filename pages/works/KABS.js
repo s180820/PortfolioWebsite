@@ -14,7 +14,7 @@ const Work = () => {
                 <P>
                 Consisting of 31 students, KABS21 was responsible for the start of the academic year 2021 at DTU, which involved 269 vectors (tutors) and around 2300 students.
                 The work consists of providing the framework for how commencement of studies is to proceed: training the vectors prior to the introduction events, coordinating activities for new students during their first semester, and in general act as leaders and role models for the vectors.
-                Through the KABS work, the student acquires a number of competences, including an understanding of group dynamics, skills in interacting in groups, time mangement and mainting an overview in stressful situations. In addition, the student will have gained mangement experience due to being responsible for a team of vectors and a fresher's trip, as well as competences within personal communication and conflict mangement.
+                Through the KABS work, the student acquires a number of competences, including an understanding of group dynamics, skills in interacting in groups, time mangement and mainting an overview in stressful situations. In addition, the student will have gained mangement experience due to being responsible for a team of vectors and a fresher&apos;s trip, as well as competences within personal communication and conflict mangement.
                 </P>
             <List ml={4} my={4}>
                 <ListItem>

@@ -9,11 +9,11 @@ const Work = () => {
         <Layout title="womensafety">
             <Container>
                 <Title>
-                The online conversation about women's safety <Badge>2021</Badge>
+                The online conversation about women&apos;s safety <Badge>2021</Badge>
                 </Title>
                 <P>
                     A Project surrounding analysing twitter posts from individuals using the tag #SarahEverard using TwitterAPI. Sarah was a british police officer
-                    who were murdered in the UK. The murder sparked a conversation regarding women's safety. The goal of this project was to investigate 
+                    who were murdered in the UK. The murder sparked a conversation regarding women&apos;s safety. The goal of this project was to investigate 
                     whether these issues are only dicussed among women, and if in fact men participate in the conversation through network analysis. 
                     The project also investigates whether the language used about violenece against women differ between the genders using NLP.
                 </P>

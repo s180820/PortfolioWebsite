@@ -14,7 +14,7 @@ const Work = () => {
                 <P>
                     A Project surrounding using Deep Neural Networks to alter a voice or save voice features from one voice and replace content (words and speech).
                     The work was a one time gig for SMK (States Museum of Art in Denmark) and were used to replicate an interview the artist, Haugue Yang, had participated in in english
-                    to make it sound like she could speak Danish. The audio were used for a video that was available to the public at the Exhibition 'Double Soul' that was shown at SMK from March till end of July.
+                    to make it sound like she could speak Danish. The audio were used for a video that was available to the public at the Exhibition &lsquo;Double Soul&lsquo; that was shown at SMK from March till end of July.
                 </P>
             <List ml={4} my={4}>
                 <ListItem>
