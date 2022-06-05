@@ -50,7 +50,7 @@ const Page = () => {
             maxWidth="100px" 
             dispaly="inline-block"
             borderRadius="full"
-            src="/images/Gustav.JPG"
+            src="/images/Gustav1.jpg"
             alt="Profile image"/>
         </Box>
         </Box>

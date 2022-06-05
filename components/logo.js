@@ -18,7 +18,7 @@ padding: 10px;
 `
 
 const Logo = () => {
-    const logoImg = `/images/Angry${useColorModeValue('', '-dark')}.png`
+    const logoImg = `/images/brainlogo${useColorModeValue('', '-dark')}.png`
 
     return (
         <Link href="/">
