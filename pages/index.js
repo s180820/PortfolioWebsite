@@ -9,6 +9,7 @@ import {
     List,
     ListItem,
     Icon,
+    chakra,
     useColorModeValue } from "@chakra-ui/react"
 import Section from "../components/section"
 import Paragraph from "../components/paragraph"
@@ -23,6 +24,10 @@ import {IoLogoGithub,
         IoLogoJavascript,
         IoMail} from 'react-icons/io5'
 
+const ProfileImage = chakra(Image, {
+        shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+          })
+
 const Page = () => {
     return (
     <Layout>
@@ -36,22 +41,31 @@ const Page = () => {
         <Heading as="h2" variant="page-title">
             Gustav Gamst Larsen
         </Heading>
-        <p>Student in Artificial Intelligence and Data Science at DTU </p>
+        <p>Data Scientist and Artificial Intelligence Enthusiast </p>
         </Box>
         <Box 
         flexShrink={0} 
         mt={{base: 4, md:0}}
         ml={{md:6}}
         align="center">
-            <Image 
-            borderColor="whiteAlpha.800" 
-            borderWidth={2} 
-            borderStyle="solid" 
-            maxWidth="100px" 
-            dispaly="inline-block"
+          <Box
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            w="150px"
+            h="150px"
+            display="inline-block"
             borderRadius="full"
-            src="/images/Gustav1.jpg"
-            alt="Profile image"/>
+            overflow="hidden"
+          >
+            <ProfileImage
+              src="/images/Gustav1.jpg"
+              alt="Profile image"
+              borderRadius="full"
+              width="100%"
+              height="100%"
+            />
+          </Box>
         </Box>
         </Box>
         <Section delay={0.1}>
