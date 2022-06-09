@@ -1,12 +1,7 @@
 import { Container, Heading, List, ListItem, Link, Button} from '@chakra-ui/react'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
-import SMKlogo from '../public/images/HaegueYang.jpeg'
-import BSClogo from '../public/images/network.png'
-import WClogo from '../public/images/wordcloud.png'
-import KABSlogo from '../public/images/KABS.jpg'
 
 const Courses = () => {
  return (
