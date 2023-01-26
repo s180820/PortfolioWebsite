@@ -77,11 +77,15 @@ const Page = () => {
             Toying with data and visualising plots and grafs is a passion.
             </Paragraph>
         <Box align='center' my={4}>
-            < NextLink href='/works'>
-                <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                    My Portfolio
-                </Button>
-            </NextLink>
+            <Button
+                as={NextLink}
+                href="/works"
+                scroll={false}
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+                >
+                My Portfolio
+            </Button>
         </Box>
         </Section>
 
@@ -94,24 +98,28 @@ const Page = () => {
                 Born in Copenhagen, Denmark.
             </BioSection>
             <BioSection>
-                <BioYear>2018</BioYear>
-                Started my Bachelors Bsc program: Artificial Intelligence and Data at Denmarks Technical University (DTU)
+                <BioYear>2018-2021</BioYear>
+                Bachelors Bsc program: Artificial Intelligence and Data at Denmarks Technical University (DTU)
             </BioSection>
             <BioSection>
                 <BioYear>2020</BioYear>
-                Teaching Assistant in the three week course period of 02461 Introduction to Intelligent Systems (DTU)
+                Teaching Assistant in 02461 Introduction to Intelligent Systems (DTU)
             </BioSection>
             <BioSection>
                 <BioYear>2022</BioYear>
                 Contract work for SMK (States Museum of Art, Copenhagen) as a Deep Learning Engineer, working with Deep Voice Conversion
             </BioSection>
             <BioSection>
-                <BioYear>2022</BioYear>
-                Finished my Bachelors Program in Artificial Intelligence and Data.
+                <BioYear>2022-present</BioYear>
+                Masters Msc Program: Human Centered AI at Denmarks Technical University (DTU).
             </BioSection>
             <BioSection>
-                <BioYear>2022</BioYear>
-                Starting my Masters Program in Human Centered AI at Denmarks Technical University (DTU).
+                <BioYear>2022-present</BioYear>
+                Teaching Assistant in Big Data Mangement at Copenhagen Buisness School (CBS)
+            </BioSection>
+            <BioSection>
+                <BioYear>2022-present</BioYear>
+                Student Software Developer at Siemens Mobility (Siemens A/S)
             </BioSection>
         </Section>
         <Section delay={0.3}>
