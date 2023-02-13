@@ -22,14 +22,7 @@ import { IoLogoGithub } from 'react-icons/io5'
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-  const [hover, setHover] = useState(false);
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
   
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
   return (
     <Link
       as={NextLink}
