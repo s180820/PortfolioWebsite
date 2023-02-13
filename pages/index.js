@@ -54,7 +54,7 @@ const Page = () => {
             });
         }, 30);
         return () => clearInterval(interval);
-      }, []);
+      });
     return (
     <Layout>
         <Container>
