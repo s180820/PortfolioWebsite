@@ -23,12 +23,38 @@ import {IoLogoGithub,
         IoLogoPython,
         IoLogoJavascript,
         IoMail} from 'react-icons/io5'
+import React, { useState, useEffect, useRef } from "react";
 
 const ProfileImage = chakra(Image, {
         shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
           })
 
 const Page = () => {
+    const [x, setX] = useState(600);
+    const textWidth = useRef(0);
+    const [index, setIndex] = useState(0);
+    const texts = ["AI •", "Datascience •", "Human Cognition •", "Machine Learning •", "Deep Learning •", "Data Visualization •", "Data Analysis •", "Data Engineering •", "Data Mining •", "Data Management •", "Data Analytics"];
+
+    //Create a scrolling text that repeats itself when the list is finished
+
+    useEffect(() => {
+        textWidth.current = document.querySelector("#scrolling-text").offsetWidth;
+        const interval = setInterval(() => {
+            setX(x => {
+            if (x <= -(1350 +textWidth.current)) {
+                return 600;
+            }
+            setIndex(i => {
+                if (i === texts.length) {
+                    return -1;
+                }
+                return i + 1;
+              });
+            return x - 1;
+            });
+        }, 30);
+        return () => clearInterval(interval);
+      }, []);
     return (
     <Layout>
         <Container>
@@ -72,7 +98,7 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
                 About me
             </Heading>
-        <Paragraph>Student at Denmarks Technical University studying Bsc. Artificial Intelligence and Data science. 
+        <Paragraph>Student at Denmarks Technical University studying Msc. Human Centerd Artificial Intelligence. 
             Machine learning, Data science and Human Cognition are some of my primary interests. 
             Toying with data and visualising plots and grafs is a passion.
             </Paragraph>
@@ -114,7 +140,7 @@ const Page = () => {
                 Masters Msc Program: Human Centered AI at Denmarks Technical University (DTU).
             </BioSection>
             <BioSection>
-                <BioYear>2022-present</BioYear>
+                <BioYear>2022</BioYear>
                 Teaching Assistant in Big Data Mangement at Copenhagen Buisness School (CBS)
             </BioSection>
             <BioSection>
@@ -133,7 +159,7 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
                 I program in
             </Heading>
-        <Paragraph> Python <Icon as={IoLogoPython} />, R, Java, JavaScript <Icon as={IoLogoJavascript} />
+        <Paragraph> Python <Icon as={IoLogoPython} />, R, Java, JavaScript <Icon as={IoLogoJavascript} />, C/C++
             </Paragraph>
         </Section>
         <Section delay={0.5}>
@@ -166,6 +192,21 @@ const Page = () => {
                     </a>
             </List>
         </Section>
+        <div style={{ overflow: "hidden", whiteSpace: "nowrap" }}>
+            {texts.map((text, index) => (
+            <div
+                id="scrolling-text"
+                style={{
+                key: index,
+                display: "inline-block",
+                whiteSpace: "nowrap",
+                transform: `translateX(${x}px)`
+                }}
+            >
+                {text}&nbsp;
+            </div>
+            ))}
+        </div>
         </Container>
         </Layout>
     )

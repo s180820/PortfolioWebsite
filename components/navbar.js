@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import { forwardRef, useState } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
@@ -22,6 +22,14 @@ import { IoLogoGithub } from 'react-icons/io5'
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  const [hover, setHover] = useState(false);
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+  
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
   return (
     <Link
       as={NextLink}
