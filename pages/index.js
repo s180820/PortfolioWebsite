@@ -32,7 +32,7 @@ const ProfileImage = chakra(Image, {
 const Page = () => {
     const [x, setX] = useState(600);
     const textWidth = useRef(0);
-    const setIndex = useState(0);
+    const [index, setIndex] = useState(0);
     const texts = ["AI •", "Datascience •", "Human Cognition •", "Machine Learning •", "Deep Learning •", "Data Visualization •", "Data Analysis •", "Data Engineering •", "Data Mining •", "Data Management •", "Data Analytics"];
 
     //Create a scrolling text that repeats itself when the list is finished
@@ -44,6 +44,7 @@ const Page = () => {
             if (x <= -(1350 +textWidth.current)) {
                 return 600;
             }
+            index;
             setIndex(i => {
                 if (i === texts.length) {
                     return -1;
@@ -196,6 +197,7 @@ const Page = () => {
             {texts.map((text, index) => (
             <div
                 id="scrolling-text"
+                key={index}
                 style={{
                 key: index,
                 display: "inline-block",
