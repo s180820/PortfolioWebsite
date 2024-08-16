@@ -86,7 +86,7 @@ const Page = () => {
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/Gustav1.jpg"
+              src="/images/Mig.jpeg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -99,9 +99,9 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
                 About me
             </Heading>
-        <Paragraph>Student at Denmarks Technical University studying Msc. Human Centerd Artificial Intelligence. 
-            Machine learning, Data science and Human Cognition are some of my primary interests. 
-            Toying with data and visualising plots and grafs is a passion.
+        <Paragraph>MSc graduate from Denmarks Technical University in Human Centered Artificial Intelligence. 
+            Machine learning, Data science, Deep Learning and MLops are some of my primary interests. 
+            Toying with data and visualising plots and graphs is a passion of mine.
             </Paragraph>
         <Box align='center' my={4}>
             <Button
@@ -137,7 +137,7 @@ const Page = () => {
                 Contract work for SMK (States Museum of Art, Copenhagen) as a Deep Learning Engineer, working with Deep Voice Conversion
             </BioSection>
             <BioSection>
-                <BioYear>2022-present</BioYear>
+                <BioYear>2022-2024</BioYear>
                 Masters Msc Program: Human Centered AI at Denmarks Technical University (DTU).
             </BioSection>
             <BioSection>
@@ -145,8 +145,12 @@ const Page = () => {
                 Teaching Assistant in Big Data Mangement at Copenhagen Buisness School (CBS)
             </BioSection>
             <BioSection>
-                <BioYear>2022-present</BioYear>
+                <BioYear>2022-2023</BioYear>
                 Student Software Developer at Siemens Mobility (Siemens A/S)
+            </BioSection>
+            <BioSection>
+                <BioYear>2023-now</BioYear>
+                Data Science Consultant at Valtech A/S
             </BioSection>
         </Section>
         <Section delay={0.3}>
