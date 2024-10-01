@@ -28,7 +28,7 @@ const Cv = () => {
           {downloading ? "Downloading..." : "Download PDF"}
         </Button>
         <embed
-          src="CV.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0"
+          src="Mit_CV.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0"
           width="800px"
           height="1130px"
         />
