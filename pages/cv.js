@@ -7,12 +7,12 @@ const Cv = () => {
 
   const handleDownload = async () => {
     setDownloading(true);
-    const response = await fetch("CV.pdf");
+    const response = await fetch("Mit_CV.pdf");
     const pdfBlob = await response.blob();
     const pdfUrl = URL.createObjectURL(pdfBlob);
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "CV.pdf";
+    link.download = "Mit_CV.pdf";
     document.body.appendChild(link);
     link.click();
     setDownloading(false);
